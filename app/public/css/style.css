@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  font-family: 'Lato', sans-serif;
+  font-size: .875rem;
+  background-color: #f1f3f4;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+
+
+/* Custom page CSS
+-------------------------------------------------- */
+/* Not required for template or sticky footer method. */
+body > main{
+    padding: 100px 15px 0;
+}
+
+.footer > main {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#homeBanner{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/coding.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#homeBanner:before {
+    content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
+	opacity: .6;
+  }
+
+#bannerContent{
+    color: white;
+    position: relative;
+    top: 30%;
+    left: 20%;
+}
+
+#bannerContent .page-header{
+    font-size: 4.5rem;
+}
+
+.error-list{
+    list-style-position: inside;
+}
+
+.nav-item i{
+    margin-right: 15px;
+}
+
+
+.btn-outline-theme{
+    color: #D16666;
+    background-color: transparent;
+    background-image: none;
+    border-color: #D16666;
+}
+
+.btn-outline-theme:hover {
+    color: #fff;
+    background-color: #D16666;
+    border-color: #D16666;
+}
+
+.btn-theme{
+    color: #fff;
+    background-color: #D16666;
+    border-color: #D16666;
+}
+
+.btn-theme:not(.disabled):hover{
+    color: #fff;
+    background-color: #B20000;
+    border-color: #B20000;
+}
